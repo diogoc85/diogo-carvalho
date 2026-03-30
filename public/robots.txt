@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diogocarvalho.com.br/sitemap.xml

@@ -1,0 +1,45 @@
+{
+  "portfolio": {
+    "name": {
+      "first": "Diogo",
+      "last": "Carvalho"
+    },
+    "role": "UX/UI Designer",
+    "bio": {
+      "stack": {
+        "frontend": "Com um pé no front-end"
+      },
+      "description": "Entusiasta do vibe coding, estudando inteligência artificial aplicada ao ux/ui design e desenvolvimento web."
+    },
+    "badges": [
+      {
+        "label": "Designer",
+        "detail": "Since 2010"
+      },
+      {
+        "label": "Made in",
+        "detail": "Recife/PE"
+      }
+    ],
+    "navigation": [
+      "Projetos",
+      "Formação",
+      "Trajetória",
+      "Skills"
+    ],
+    "social": [
+      {
+        "platform": "Instagram",
+        "icon": "instagram"
+      },
+      {
+        "platform": "LinkedIn",
+        "icon": "linkedin"
+      },
+      {
+        "platform": "WhatsApp",
+        "icon": "whatsapp"
+      }
+    ]
+  }
+}
