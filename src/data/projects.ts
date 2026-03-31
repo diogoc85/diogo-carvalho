@@ -11,6 +11,10 @@ export interface Project {
     year: string;
     tools: string[];
   };
+  links?: {
+    label: string;
+    url: string;
+  }[];
 }
 
 export const PROJECTS: Project[] = [
@@ -49,11 +53,16 @@ export const PROJECTS: Project[] = [
     tags: ["CRM", "Web App"],
     details: {
       overview:
-        "Plataforma de CRM Omnichannel integrada com chatbot e inteligência artificial. O design focou em simplificar fluxos complexos de vendas e atendimento ao cliente.",
+        "Trabalhei durante 5 anos na meets CRM onde atuei na criação dos sites, no web app, na criação de novas soluções e suporte ao marketing da empresa. O site da meets foi criado com foco em uma comunicação clara e objetiva. Com uma copywriting curta e direta e um design com apelo visual guiamos o usuário a uma jornada entendimento sobre a ferramenta e consequentemente de conversão. \n\nNas imagens abaixo segue os sites da meets bot e Lead meets.",
       role: "UX/UI Designer",
       year: "2023",
       tools: ["Figma", "Photoshop", "Next.js", "CSS"],
     },
+    links: [
+      { label: "Meets CRM", url: "https://meets.com.br/" },
+      { label: "Meets Bot", url: "https://meets.com.br/meets-bot" },
+      { label: "Lead Meets", url: "https://www.leadmeets.com/" },
+    ],
   },
   {
     slug: "meets-ia",
@@ -72,6 +81,9 @@ export const PROJECTS: Project[] = [
       year: "2024",
       tools: ["Figma", "Photoshop", "Next.js", "CSS"],
     },
+    links: [
+      { label: "Meets IA", url: "https://meets.com.br/meets-ia" }
+    ],
   },
   {
     slug: "mba-economia",

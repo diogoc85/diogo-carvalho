@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight, ArrowSquareOut } from "@phosphor-icons/react";
 import { PROJECTS } from "../data/projects";
 import { ImageSlider } from "../components/ImageSlider";
 
@@ -76,6 +76,22 @@ export function ProjectDetail() {
               <p className="whitespace-pre-line font-extralight text-sm leading-relaxed text-text-secondary">
                 {project.details.overview}
               </p>
+              {project.links && (
+                <div className="mt-2 flex flex-wrap gap-x-6 gap-y-3">
+                  {project.links.map((link) => (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-display text-sm font-normal text-accent transition-all duration-300 hover:opacity-80"
+                    >
+                      {link.label}
+                      <ArrowSquareOut size={16} weight="bold" />
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
 
           </div>
