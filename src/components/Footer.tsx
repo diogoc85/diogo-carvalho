@@ -1,8 +1,9 @@
-import { InstagramLogo, LinkedinLogo, WhatsappLogo, ArrowUp } from "@phosphor-icons/react";
+import { InstagramLogo, LinkedinLogo, WhatsappLogo, ArrowUp, BehanceLogoIcon } from "@phosphor-icons/react";
 
 const SOCIAL_LINKS = [
   { icon: InstagramLogo, label: "Instagram", href: "https://www.instagram.com/diogoc.dsg/", target: "_blank" },
   { icon: LinkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/diogocdesigner/", target: "_blank" },
+  { icon: BehanceLogoIcon, label: "Behance", href: "https://www.behance.net/diogoc", target: "_blank" },
   { icon: WhatsappLogo, label: "WhatsApp", href: "https://wa.me/5581988487270?text=Ol%C3%A1%2C%20vamos%20conversar%3F", target: "_blank" },
 ];
 
@@ -25,7 +26,7 @@ export function Footer() {
                 aria-label={label}
                 className="text-accent transition-opacity duration-200 hover:opacity-70"
               >
-                <Icon size={20} weight="regular" />
+                <Icon size={24} weight="regular" />
               </a>
             ))}
           </div>

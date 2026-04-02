@@ -5,6 +5,7 @@ import {
   WhatsappLogo,
   List,
   X,
+  BehanceLogoIcon,
 } from "@phosphor-icons/react";
 import { TypewriterText } from "./TypewriterText";
 
@@ -18,6 +19,7 @@ const NAV_ITEMS = [
 const SOCIAL_LINKS = [
   { icon: InstagramLogo, label: "Instagram", href: "https://www.instagram.com/diogoc.dsg/", target: "_blank" },
   { icon: LinkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/diogocdesigner/", target: "_blank" },
+  { icon: BehanceLogoIcon, label: "Behance", href: "https://www.behance.net/diogoc", target: "_blank" },
   { icon: WhatsappLogo, label: "WhatsApp", href: "https://wa.me/5581988487270?text=Ol%C3%A1%2C%20vamos%20conversar%3F", target: "_blank" },
 ];
 
@@ -102,7 +104,7 @@ export function Hero() {
             <div className="w-full z-10 flex flex-1 flex-col gap-6">
               {/* Hidden H1 for SEO */}
               <h1 className="sr-only">Diogo Carvalho — UX/UI Designer & Web Developer</h1>
-              
+
               {/* Name + Role */}
               <div className="flex flex-col gap-3 mt-10">
                 <img

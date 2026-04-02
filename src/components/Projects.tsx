@@ -40,7 +40,7 @@ export function Projects() {
       >
         {/* ── Custom cursor ── */}
         <div
-          className="pointer-events-none fixed z-50 flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 font-display text-sm font-semibold text-text-primary shadow-lg transition-opacity duration-200"
+          className="pointer-events-none fixed z-50 flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 font-display text-sm font-semibold text-black shadow-lg transition-opacity duration-200"
           style={{
             left: cursor.x,
             top: cursor.y,
@@ -65,12 +65,12 @@ export function Projects() {
               style={{ zIndex: index + 1 }}
             >
               <div className="relative aspect-[16/9] w-full overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover object-top"
-                  />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-top"
+                />
               </div>
             </Link>
           </div>
